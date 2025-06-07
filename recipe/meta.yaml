@@ -18,13 +18,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - scikit-learn
   run:
     - python >={{ python_min }}
     - scikit-learn
     - microtc
     - b4msa
-    - evomsa
+    - encexp
 
 test:
   imports:
