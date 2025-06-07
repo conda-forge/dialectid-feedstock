@@ -1,5 +1,5 @@
 {% set name = "dialectid" %}
-{% set version = "0.0.5" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,24 +7,23 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dialectid-{{ version }}.tar.gz
-  sha256: 653da5cf08e5f5dd4ad8b57971254d59b76c59bfbc02826ae376ab202b9acfa7
+  sha256: d9dfa215e46d5737928faf7eebebc70238cb6f05bbf42ffc19a7f00c70f29570
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - scikit-learn
   run:
     - python >={{ python_min }}
     - scikit-learn
     - microtc
     - b4msa
-    - evomsa
+    - encexp
 
 test:
   imports:
