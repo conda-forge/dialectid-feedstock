@@ -1,5 +1,5 @@
 {% set name = "dialectid" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dialectid-{{ version }}.tar.gz
-  sha256: d9dfa215e46d5737928faf7eebebc70238cb6f05bbf42ffc19a7f00c70f29570
+  sha256: 9cd39417e6019c0f91852b25e11505efb1665a662994540c98f8dddf8da84861
 
 build:
   noarch: python
